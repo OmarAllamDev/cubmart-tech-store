@@ -1,0 +1,520 @@
+/* #region ===== FONTS IMPORT ===== */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* #endregion --------- */
+
+/* #region ===== CSS RESET ===== */
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+/* #endregion --------- */
+
+/* #region ===== ROOT & SETUP ===== */
+:root {
+    --background: #f8fafc;
+    --accent: #2563eb;
+    --cards: #ffffff;
+    --text: #111827;
+    --second-text: #6b7280;
+    --border: #e5e7eb;
+}
+
+* {
+    scroll-margin-top: 100px;
+}
+
+html {
+    height: 100vh;
+    font-family: "Inter", sans-serif;
+    color: var(--text);
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+}
+/* #endregion --------- */
+
+/* #region ===== OVERALL CHANGES ===== */
+h1 {
+    font-weight: 800;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+}
+
+a {
+    color: var(--text);
+}
+
+section,
+main {
+    height: auto;
+    padding: 30px 8%;
+    background-color: var(--background);
+}
+/* #endregion --------- */
+
+/* #region ===== NAVIGATION BAR ===== */
+#header {
+    padding: 0 6%;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--background);
+}
+
+#logo {
+    height: 60px;
+    width: 60px;
+}
+
+.nav-link {
+    font-weight: 600;
+    padding: 2px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent);
+    transform: scale(1.1);
+}
+
+.dropdown-toggle {
+    font-weight: 600;
+}
+
+.dropdown-toggle:hover {
+    color: var(--accent);
+    cursor: pointer;
+}
+
+.header-icons {
+    font-size: 30px;
+    color: var(--text);
+    transition: all 0.3s ease;
+}
+
+#login {
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+#login:hover,
+.header-icons:hover {
+    transform: scale(1.1);
+}
+
+.no-arrow::after {
+    display: none;
+}
+
+.small-nav-links {
+    background-color: var(--background);
+    border: 1px none;
+}
+
+.small-nav-links:hover {
+    transform: scale(1.2);
+}
+/* #endregion --------- */
+
+/* #region ===== HERO SECTION ===== */
+#hero {
+    padding-top: 120px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(229, 231, 235, 0.5);
+    animation: fade-in 1s ease 0s 1;
+}
+
+#hero-new {
+    background-color: rgb(37, 99, 235, 0.2);
+    color: var(--accent);
+    border-radius: 20px;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+#hero-title {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+#hero-title span {
+    color: var(--accent);
+}
+
+#hero-desc {
+    color: var(--second-text);
+    font-weight: 500;
+    width: 70%;
+}
+
+#shop-now {
+    padding: 8px 0;
+    width: 160px;
+    text-align: center;
+    color: var(--background);
+    background-color: var(--accent);
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#shop-now:hover {
+    transform: scale(1.05);
+}
+
+#shop-now i {
+    margin-left: 10px;
+}
+
+#explore {
+    padding: 8px 0;
+    width: 160px;
+    text-align: center;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#explore:hover {
+    transform: scale(1.05);
+}
+
+.hero-icons {
+    font-size: 30px;
+    color: var(--accent);
+}
+
+.hero-feature {
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+#hero-img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0%;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}
+/* #endregion --------- */
+
+/* #region ===== WHY US SECTION ===== */
+.why-us-card {
+    width: 30%;
+}
+
+#why-us-title {
+    font-size: 32px;
+}
+
+#why-us-title span {
+    color: var(--accent);
+}
+
+.why-us-icons {
+    color: var(--accent);
+    padding: 10px 17px;
+    border-radius: 10px;
+    border: 1px solid var(--accent);
+    font-size: 35px;
+}
+
+#why-us h3 {
+    font-size: 20px;
+}
+
+.why-us-card p {
+    color: var(--second-text);
+}
+
+@media (max-width: 1091px) {
+    #why-us-box {
+        flex-direction: column !important;
+    }
+    .why-us-card {
+        width: 100%;
+    }
+}
+/* #endregion --------- */
+
+/* #region ===== CATEGORIES SECTION ===== */
+#categories-box {
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid var(--border);
+    box-shadow: 3px 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+#categories-box a {
+    transition: all 0.3s ease;
+}
+
+#categories-box a:hover {
+    transform: scale(1.05);
+}
+
+.category {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.category-icon {
+    font-size: 30px;
+}
+/* #endregion --------- */
+
+/* #region ===== PRODUCTS SECTION ===== */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+article {
+    border: 1px solid var(--border);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 14px 18px;
+    transition: all 0.3s ease;
+}
+
+article:hover {
+    transform: translateY(-10px);
+    border: 1px solid var(--accent);
+}
+
+.products-heading {
+    margin-bottom: 15px;
+    font-size: 32px;
+}
+
+.product-name {
+    font-weight: 600;
+}
+
+.product-price {
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.product-price span {
+    font-weight: 600;
+    text-decoration: line-through;
+    color: var(--second-text);
+    margin-right: 10px;
+}
+
+.product-img {
+    height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+#mobiles,
+#accessories {
+    margin-top: 10px;
+}
+
+.to-spotlight {
+    color: var(--background);
+    background-color: var(--accent);
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+/* #endregion --------- */
+
+/* #region ===== SPOTLIGHTS SECTION ===== */
+#spotlights {
+    background-color: var(--text);
+    color: var(--background);
+}
+
+.spotlight-box {
+    min-width: 280px;
+}
+
+#spotlights h1 {
+    font-size: 32px;
+}
+
+#spotlights hr {
+    transform: rotate(90deg);
+    width: 100px;
+}
+
+#spotlights i {
+    font-size: 50px;
+}
+
+#spotlight-title span {
+    color: var(--accent);
+}
+
+.spotlight-name {
+    font-weight: 600;
+}
+
+.spotlight-text {
+    color: var(--second-text);
+}
+/* #endregion --------- */
+
+/* #region ===== REVIEWS SECTION ===== */
+#reviews h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.review-box {
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+.review-box:hover {
+    transform: translateY(-5px);
+}
+
+.bi-star,
+.bi-star-fill,
+.bi-star-half {
+    color: gold;
+}
+
+.review-comment {
+    color: var(--second-text);
+}
+
+.review-names {
+    font-weight: 600;
+}
+
+.review-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* #endregion --------- */
+
+/* #region ===== CONTACT SECTION ===== */
+#contact {
+    gap: 50px;
+}
+
+.input-group {
+    border-radius: 10px;
+}
+
+.input-group input {
+    border: 1px solid var(--border);
+    font-size: 15px;
+}
+
+.input-group span {
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+#contact p {
+    color: var(--second-text);
+}
+
+#contact button {
+    border-radius: 10px;
+    border: 0;
+    padding: 10px 0;
+    background-color: var(--accent);
+    color: var(--background);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+#contact button:hover {
+    box-shadow: 1px 1px 10px #2564ebc1;
+}
+/* #endregion --------- */
+
+/* #region ===== FOOTER ===== */
+#footer {
+    background-color: var(--text);
+    color: var(--background);
+    padding: 30px 5%;
+}
+
+#foot-logo {
+    height: 40px;
+    width: 40px;
+}
+
+#foot-title {
+    font-size: 30px;
+}
+
+#footer p {
+    color: var(--second-text);
+}
+
+#footer a {
+    color: var(--second-text);
+}
+
+.foot-p {
+    color: var(--background) !important;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#rights {
+    width: 100%;
+    background-color: var(--text);
+    color: var(--second-text);
+    text-align: center;
+    padding-bottom: 20px;
+}
+/* #endregion --------- */

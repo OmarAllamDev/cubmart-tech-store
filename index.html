@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CubMart</title>
+        <link rel="icon" href="assets/images/logo.png" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+    </head>
+    <body>
+        <!-- #region ======= NAVIGATION BAR ======= -->
+        <header id="header" class="d-flex flex-row justify-content-between align-items-center">
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <a href="#hero"><img src="assets/images/logo.png" alt="Logo" id="logo" /></a>
+                <a href="#hero"><h1 id="websiteName"></h1></a>
+            </div>
+            <nav class="nav-links d-none d-lg-flex flex-row justify-content-center align-items-center gap-4">
+                <a href="#hero" class="nav-link">Home</a>
+                <div class="dropdown">
+                    <a class="dropdown-toggle" data-bs-toggle="dropdown">Shop</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#laptops" class="dropdown-item">Laptops</a></li>
+                        <li><a href="#mobiles" class="dropdown-item">Smartphones</a></li>
+                        <li><a href="#accessories" class="dropdown-item">Accessories</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a href="#categories" class="dropdown-item">All</a></li>
+                    </ul>
+                </div>
+                <a href="#reviews" class="nav-link">About Us</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <div class="d-flex flex-row justify-content-center align-items-center gap-3">
+                <a href="#" class="d-sm-block d-none header-icons"><i class="header-icons bi bi-person"></i></a>
+                <a href="#" class="d-sm-block d-none header-icons"><i class="header-icons bi bi-cart"></i></a>
+                <a href="#" id="login">Login</a>
+                <div class="d-block d-lg-none dropdown">
+                    <button
+                        class="small-nav-links dropdown-toggle bi bi-list header-icons no-arrow"
+                        data-bs-toggle="dropdown"
+                        aria-label="Open navigation menu"
+                    ></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#hero" class="dropdown-item">Home</a></li>
+                        <li><a href="#shop" class="dropdown-item">Shop</a></li>
+                        <li><a href="#reviews" class="dropdown-item">About Us</a></li>
+                        <li><a href="#contact" class="dropdown-item">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= HERO SECTION =======-->
+        <section id="hero" class="d-flex flex-row justify-content-center align-items-center">
+            <div id="left-hero" class="w-lg-50 w-100 d-flex flex-column justify-content-center align-items-start gap-3">
+                <p id="hero-new">NEW ARRIVALS</p>
+                <h1 id="hero-title">Discover the <br />Future of <span>Tech</span></h1>
+                <p id="hero-desc"></p>
+                <div class="d-flex flex-row justify-content-sm-center justify-content-start align-items-center gap-3 flex-wrap">
+                    <a href="#shop" id="shop-now">Shop now <i class="bi bi-arrow-right"></i></a>
+                    <a href="#contact" id="explore">Contact Us</a>
+                </div>
+                <div class="d-flex flex-row justify-content-start align-items-center flex-wrap">
+                    <div class="d-flex flex-row justify-content-start align-items-center gap-3 me-4">
+                        <i id="heroFeatureIcon1"></i>
+                        <p class="hero-feature" id="heroFeature1"></p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start align-items-center gap-3 me-4">
+                        <i id="heroFeatureIcon2"></i>
+                        <p class="hero-feature" id="heroFeature2"></p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-start align-items-center gap-3 me-4">
+                        <i id="heroFeatureIcon3"></i>
+                        <p class="hero-feature" id="heroFeature3"></p>
+                    </div>
+                </div>
+            </div>
+            <div id="right-hero" class="w-50 d-none d-lg-flex flex-row justify-content-end align-items-center">
+                <img src="assets/images/hero-image.png" alt="Hero Image" id="hero-img" />
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= WHY US SECTION ======= -->
+        <section id="why-us" class="d-flex flex-column justify-content-center align-items-center gap-5">
+            <h1 id="why-us-title">Why Choose <span>CubMart?</span></h1>
+            <div id="why-us-box" class="d-flex flex-row justify-content-center align-items-center gap-5">
+                <div class="why-us-card d-flex flex-row justify-content-center align-items-center gap-4">
+                    <i id="whyUsIcon1"></i>
+                    <div class="d-flex flex-column justify-content-center align-items-start gap-2">
+                        <h3 id="whyUsTitle1"></h3>
+                        <p id="whyUsText1"></p>
+                    </div>
+                </div>
+                <div class="why-us-card d-flex flex-row justify-content-center align-items-center gap-4">
+                    <i id="whyUsIcon2"></i>
+                    <div class="d-flex flex-column justify-content-center align-items-start gap-2">
+                        <h3 id="whyUsTitle2"></h3>
+                        <p id="whyUsText2"></p>
+                    </div>
+                </div>
+                <div class="why-us-card d-flex flex-row justify-content-center align-items-center gap-4">
+                    <i id="whyUsIcon3"></i>
+                    <div class="d-flex flex-column justify-content-center align-items-start gap-2">
+                        <h3 id="whyUsTitle3"></h3>
+                        <p id="whyUsText3"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= CATEGORIES SECTION ======= -->
+        <section id="categories">
+            <div id="categories-box" class="d-flex flex-row justify-content-around align-items-center">
+                <a href="#laptops"
+                    ><div class="d-flex flex-row justify-content-center align-items-center gap-3">
+                        <i class="category-icon bi bi-laptop"></i>
+                        <p class="category d-none d-sm-block">Laptops</p>
+                    </div></a
+                >
+                <a href="#mobiles"
+                    ><div class="d-flex flex-row justify-content-center align-items-center gap-3">
+                        <i class="category-icon bi bi-phone"></i>
+                        <p class="category d-none d-sm-block">Smartphones</p>
+                    </div></a
+                >
+                <a href="#accessories"
+                    ><div class="d-flex flex-row justify-content-center align-items-center gap-3">
+                        <i class="category-icon bi bi-tag"></i>
+                        <p class="category d-none d-sm-block">Accessories</p>
+                    </div></a
+                >
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= PRODUCTS SECTION ======= -->
+        <main id="shop">
+            <h1 id="laptops" class="products-heading">Laptops</h1>
+            <div class="products-grid">
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-1.png" alt="MacBook Air M2" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product1"></p>
+                        <p class="product-price" id="price1"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-2.png" alt="Dell XPS 13" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product2"></p>
+                        <p class="product-price" id="price2"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-3.png" alt="Lenovo ThinkPad X1 Carbon" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product3"></p>
+                        <p class="product-price" id="price3"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+            </div>
+            <h1 id="mobiles" class="products-heading">Smartphones</h1>
+            <div class="products-grid">
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-4.png" alt="iPhone 15 Pro" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product4"></p>
+                        <p class="product-price" id="price4"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-5.png" alt="Samsung Galaxy S24 Ultra" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product5"></p>
+                        <p class="product-price" id="price5"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-6.png" alt="Redmi Note 14 Pro" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product6"></p>
+                        <p class="product-price" id="price6"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+            </div>
+            <h1 id="accessories" class="products-heading">Accessories</h1>
+            <div class="products-grid">
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-7.png" alt="Sony WH-1000XM5" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product7"></p>
+                        <p class="product-price" id="price7"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-8.png" alt="Apple Watch Series 9" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product8"></p>
+                        <p class="product-price" id="price8"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+                <article class="d-flex flex-column justify-content-center align-items-center position-relative">
+                    <img src="assets/images/product-9.png" alt="Oraimo AirBuds 4" class="product-img" />
+                    <div class="w-100 d-flex flex-row justify-content-between align-items-center">
+                        <p class="product-name" id="product9"></p>
+                        <p class="product-price" id="price9"></p>
+                    </div>
+                    <a href="#spotlights" class="to-spotlight">View Spotlight</a>
+                </article>
+            </div>
+        </main>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= SPOTLIGHTS SECTION ======= -->
+        <section id="spotlights" class="d-flex flex-column justify-content-start align-items-center w-100 gap-4">
+            <h1 id="spotlight-title">Product <span>Spotlight</span></h1>
+            <div id="spotlights-grid" class="d-flex flex-row justify-content-start align-items-center gap-4 overflow-auto w-100">
+                <div class="spotlight-box d-flex flex-row justify-content-center align-items-center gap-3">
+                    <i id="spotlightIcon1"></i>
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+                        <p class="spotlight-name" id="spotlightTitle1"></p>
+                        <p class="spotlight-text" id="spotlightText1"></p>
+                    </div>
+                </div>
+                <div class="spotlight-box d-flex flex-row justify-content-center align-items-center gap-3">
+                    <i id="spotlightIcon2" style="transform: rotate(-90deg)"></i>
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+                        <p class="spotlight-name" id="spotlightTitle2"></p>
+                        <p class="spotlight-text" id="spotlightText2"></p>
+                    </div>
+                </div>
+                <div class="spotlight-box d-flex flex-row justify-content-center align-items-center gap-3">
+                    <i id="spotlightIcon3"></i>
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+                        <p class="spotlight-name" id="spotlightTitle3"></p>
+                        <p class="spotlight-text" id="spotlightText3"></p>
+                    </div>
+                </div>
+                <div class="spotlight-box d-flex flex-row justify-content-center align-items-center gap-3">
+                    <i id="spotlightIcon4"></i>
+                    <div class="d-flex flex-column justify-content-center align-items-start">
+                        <p class="spotlight-name" id="spotlightTitle4"></p>
+                        <p class="spotlight-text" id="spotlightText4"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= REVIEWS SECTION ======= -->
+        <section id="reviews">
+            <h1 class="w-100 text-center">What Our Customers Say</h1>
+            <div class="d-flex flex-row align-items-center justify-content-center gap-4 flex-wrap">
+                <div class="review-box d-flex flex-column justify-content-center align-items-start gap-3">
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="review-comment w-100 text-center" id="reviewComment1"></p>
+                    <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                        <img src="assets/images/client-1.jpg" alt="Profile 1" class="review-img" />
+                        <p class="review-names" id="reviewName1"></p>
+                    </div>
+                </div>
+                <div class="review-box d-flex flex-column justify-content-center align-items-start gap-3">
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="review-comment w-100 text-center" id="reviewComment2"></p>
+                    <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                        <img src="assets/images/client-2.jpg" alt="Profile 2" class="review-img" />
+                        <p class="review-names" id="reviewName2"></p>
+                    </div>
+                </div>
+                <div class="review-box d-flex flex-column justify-content-center align-items-start gap-3">
+                    <div class="stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                    </div>
+                    <p class="review-comment w-100 text-center" id="reviewComment3"></p>
+                    <div class="d-flex flex-row align-items-center justify-content-start gap-3">
+                        <img src="assets/images/client-3.jpg" alt="Profile 3" class="review-img" />
+                        <p class="review-names" id="reviewName3"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= CONTACT SECTION ======= -->
+        <section id="contact" class="d-flex flex-md-row flex-column">
+            <div class="d-flex flex-column align-items-start justify-content-between gap-3 w-md-50 w-100">
+                <div class="d-flex flex-column align-items-start justify-content-start gap-3 w-100">
+                    <h1>Stay Connected</h1>
+                    <p>Subscribe to get the latest updates and offers.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Enter your email address" aria-describedby="subscribe" />
+                        <span class="input-group-text" id="subscribe">Subscribe</span>
+                    </div>
+                </div>
+                <div class="d-flex flex-column align-items-start justify-content-start gap-3 w-100">
+                    <h1>Start Console</h1>
+                    <p>Open the browser console and type:</p>
+                    <input class="form-control" type="text" value="startOrder()" aria-label="readonly input example" readonly />
+                </div>
+            </div>
+            <div class="d-flex flex-column align-items-start justify-content-center gap-3 w-md-50 w-100">
+                <h1>Contact Us</h1>
+                <input class="form-control" type="text" placeholder="Your Name" />
+                <input class="form-control" type="email" placeholder="Your Email" />
+                <input class="form-control" type="text" placeholder="Subject" />
+                <textarea class="form-control" rows="2" placeholder="Your Message"></textarea>
+                <button>Send Message</button>
+            </div>
+        </section>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= FOOTER ======= -->
+        <footer class="d-flex flex-column justify-content-center align-items-center w-100">
+            <section id="footer" class="d-flex flex-column flex-md-row align-items-start justify-content-between gap-5 w-100">
+                <div class="d-flex flex-column align-items-start gap-3 w-100 w-md-25">
+                    <div class="d-flex flex-row justify-content-center align-items-center gap-3">
+                        <img src="assets/images/logo.png" alt="Logo" id="foot-logo" />
+                        <h1 id="foot-title">CubMart</h1>
+                    </div>
+                    <p>Your one-stop shop for premium tech gadgets and accessories.</p>
+                </div>
+                <div class="d-flex flex-row align-items-start justify-content-between gap-5 w-100 w-md-50">
+                    <div class="footer-box d-flex flex-column align-items-start gap-2">
+                        <p class="foot-p">Shop</p>
+                        <a href="#laptops">Laptops</a>
+                        <a href="#mobiles">Smartphones</a>
+                        <a href="#accessories">Accessories</a>
+                        <a href="#categories">All</a>
+                    </div>
+                    <div class="footer-box d-flex flex-column align-items-start gap-2">
+                        <p class="foot-p">Company</p>
+                        <a href="#reviews">About Us</a>
+                        <a href="#contact">Contact Us</a>
+                    </div>
+                    <div class="footer-box d-flex flex-column align-items-start gap-2">
+                        <p class="foot-p">Social</p>
+                        <div class="d-flex flex-row justify-content-center align-items-center gap-3">
+                            <i id="footerSocial1"></i>
+                            <i id="footerSocial2"></i>
+                            <i id="footerSocial3"></i>
+                            <i id="footerSocial4"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <p id="rights">© 2026 CubMart. All rights reserved.</p>
+        </footer>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= BOOTSTRAP LINKING ======= -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <!-- #endregion -------------------->
+
+        <!-- #region ======= JAVASCRIPT LINKING ======= -->
+        <script src="assets/js/icons.js"></script>
+        <script src="assets/js/text.js"></script>
+        <!-- #endregion -------------------->
+    </body>
+</html>

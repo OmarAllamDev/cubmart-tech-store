@@ -119,15 +119,6 @@ main {
     transition: all 0.3s ease;
 }
 
-#login {
-    border-radius: 10px;
-    background-color: var(--accent);
-    color: white;
-    padding: 10px 20px;
-    transition: all 0.3s ease;
-}
-
-#login:hover,
 .header-icons:hover {
     transform: scale(1.1);
 }
@@ -379,11 +370,6 @@ article:hover {
 
 #spotlights h1 {
     font-size: 32px;
-}
-
-#spotlights hr {
-    transform: rotate(90deg);
-    width: 100px;
 }
 
 #spotlights i {
